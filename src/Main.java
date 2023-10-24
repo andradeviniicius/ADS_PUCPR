@@ -1,30 +1,30 @@
-//Exemplo de aplicação 4: crie um código em Java o qual peça para que o usuário digite um nome (tipo String), uma idade (tipo int) e uma altura (tipo float). Armazene cada um desses dados em uma variável. Depois, mostre estes dados na tela para o usuário.
+//Exemplo de aplicação 5: converta o código a seguir de Python para Java:
 
 import java.util.Scanner;
-import java.util.Locale;
+
 public class Main {
     public static void main(String[] args) {
-        Locale.setDefault(new Locale("pt", "BR"));
+       /*
+       *    idade = int(input("Digite sua idade: "))
+            if idade < 18:
+                print("Você é menor de idade.")
+            elif idade >= 18 and idade < 60:
+                print("Você é adulto.")
+            else:
+                print("Você é um(a) idoso(a).")
+       * */
+
         Scanner scanner = new Scanner(System.in);
-
-        System.out.print("Digite seu nome: ");
-
-        String nome = scanner.nextLine();
-
         System.out.print("Digite sua idade: ");
-
         int idade = scanner.nextInt();
 
+        if (idade < 18) {
+            System.out.println("Voce é menor de idade");
+        } else if (idade >= 18 && idade < 60) {
+            System.out.println("Você é adulto.");
+        } else {
+            System.out.println("Você é um(a) idoso(a).");
+        }
 
-        System.out.print("Digite sua altura: ");
-
-        float altura = scanner.nextFloat();
-
-
-        System.out.println("Nome: " + nome);
-        System.out.println("Idade: " + idade);
-        System.out.println("Altura: " + altura);
-
-        scanner.close();
     }
 }
