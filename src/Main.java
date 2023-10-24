@@ -1,4 +1,4 @@
-//Exemplo de aplicação 10: crie dois loops usando Java. O primeiro deve usar “break”, e o segundo, “continue”.
+//Exemplo de aplicação 11: crie um algoritmo em Java contendo uma lista com cinco números. Percorra cada elemento desta lista utilizando “for” e, em seguida, percorra com o “foreach”.
 public class Main {
 
     public static void main(String[] args) {
