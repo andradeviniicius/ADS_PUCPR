@@ -1,28 +1,25 @@
-//Exemplo de aplicação 11: crie um algoritmo em Java contendo uma lista com cinco números. Percorra cada elemento desta lista utilizando “for” e, em seguida, percorra com o “foreach”.
+//Exemplo de aplicação 13: crie um algoritmo em Java contendo uma matriz numérica contendo três linhas e três colunas. Percorra cada elemento desta lista utilizando “for” e, em seguida, percorra com o “foreach”.
 public class Main {
-
     public static void main(String[] args) {
-        // Exemplo de uso do break
+        int[][] matriz = {
+                {1, 2, 3},
+                {4, 5, 6},
+                {7, 8, 9}
+        };
 
-        System.out.println("Exemplo com break:");
-
-        for (int i = 1; i <= 5; i++) {
-            if (i == 3) {
-                break; // Encerra o loop quando i == 3
+        System.out.println("Exemplo com o loop for:");
+        for (int i = 0; i < matriz.length; i++) {
+            for (int j = 0; j < matriz[i].length; j++) {
+                System.out.println("Elemento: " + matriz[i][j]);
             }
-            System.out.println("Número: " + i);
         }
-        System.out.println();
 
-        // Exemplo de uso do continue
-
-        System.out.println("Exemplo com continue:");
-
-        for (int i = 1; i <= 5; i++) {
-            if (i == 3) {
-                continue; // Pula para a próxima iteração quando i == 3
+        System.out.println("\n\nExemplo com o loop foreach:");
+        for (int[] linha : matriz) {
+            for (int elemento : linha) {
+                System.out.println("Elemento: " + elemento);
             }
-            System.out.println("Número: " + i);
         }
     }
 }
+
