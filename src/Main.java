@@ -1,25 +1,21 @@
-//Exemplo de aplicação 13: crie um algoritmo em Java contendo uma matriz numérica contendo três linhas e três colunas. Percorra cada elemento desta lista utilizando “for” e, em seguida, percorra com o “foreach”.
+import java.util.Scanner;
+
+//1. Crie um algoritmo em Java que solicita três números decimais ao usuário.
+// Em seguida, a média destes números é calculada e mostrada na tela para o usuário.
 public class Main {
     public static void main(String[] args) {
-        int[][] matriz = {
-                {1, 2, 3},
-                {4, 5, 6},
-                {7, 8, 9}
-        };
 
-        System.out.println("Exemplo com o loop for:");
-        for (int i = 0; i < matriz.length; i++) {
-            for (int j = 0; j < matriz[i].length; j++) {
-                System.out.println("Elemento: " + matriz[i][j]);
-            }
-        }
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("1- Insira 1 numero de 0 a 10");
+        int input1 = scanner.nextInt();
 
-        System.out.println("\n\nExemplo com o loop foreach:");
-        for (int[] linha : matriz) {
-            for (int elemento : linha) {
-                System.out.println("Elemento: " + elemento);
-            }
-        }
+        System.out.println("2- Insira 1 numero de 0 a 10");
+        int input2 = scanner.nextInt();
+
+        System.out.println("3- Insira 1 numero de 0 a 10");
+        int input3 = scanner.nextInt();
+
+        System.out.println((input1 + input2 + input3) / 3);
+
     }
 }
-
