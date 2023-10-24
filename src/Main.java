@@ -1,30 +1,23 @@
-//Exemplo de aplicação 5: converta o código a seguir de Python para Java:
+//EXEMPLOExemplo de aplicação 6: crie um algoritmo em Java o qual informe ao usuário se um determinado número é igual a 1, igual a 2, igual a 3, ou se o número é diferente de 1, 2 e 3.
 
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-       /*
-       *    idade = int(input("Digite sua idade: "))
-            if idade < 18:
-                print("Você é menor de idade.")
-            elif idade >= 18 and idade < 60:
-                print("Você é adulto.")
-            else:
-                print("Você é um(a) idoso(a).")
-       * */
 
         Scanner scanner = new Scanner(System.in);
         System.out.print("Digite sua idade: ");
-        int idade = scanner.nextInt();
+        int numero = scanner.nextInt();
 
-        if (idade < 18) {
-            System.out.println("Voce é menor de idade");
-        } else if (idade >= 18 && idade < 60) {
-            System.out.println("Você é adulto.");
+        if (numero == 1) {
+            System.out.println("O número é igual a 1");
+        } else if (numero == 2) {
+            System.out.println("O número é igual a 2");
+        } else if (numero == 3) {
+            System.out.println("O número é igual a 3");
         } else {
-            System.out.println("Você é um(a) idoso(a).");
+            System.out.println("O número é diferente de 1, 2 e 3");
         }
-
     }
 }
+
