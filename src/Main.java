@@ -1,18 +1,23 @@
 import java.util.Scanner;
 
-//2. Crie um algoritmo em Java que verifica se um número inteiro é positivo, negativo ou zero.
+//3. Crie um algoritmo em Java que mostre na tela todos os múltiplos de 3 entre os números 0 e 30 usando a estrutura “do while”.
 public class Main {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Insira 1 numero");
-        int input1 = scanner.nextInt();
 
-        if (input1 > 0) {
-            System.out.println("positivo");
-        } else if (input1 < 0) {
-            System.out.println("negativo");
-        } else {
-            System.out.println("zero");
-        }
+        int contador = 0;
+        int quantidadeDeMultiplos = 0;
+
+        do {
+
+            if (contador > 0) {
+                if (contador % 3 == 0) {
+                    quantidadeDeMultiplos++;
+                }
+            }
+
+            contador++;
+        } while (contador <= 30);
+
+        System.out.println(quantidadeDeMultiplos);
     }
 }
