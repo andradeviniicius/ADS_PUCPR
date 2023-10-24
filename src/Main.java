@@ -2,21 +2,33 @@ public class Main {
 
     public static void main(String[] args) {
 
-        // Exemplos de declaração e atribuição de variável
+        // declaração das variáveis
+        int x, y;
+        int X;     //X maiúsculo é diferente de x minúsculo.
+        boolean p, q;
+        float a = 10.5f;
+        /*
 
-        int numero;
+        Aqui atribuímos valores às variáveis que criamos anteriormente.
 
-        float altura = 1.70f;
+        Perceba que todas as linhas terminam com ponto e vírgula.
 
-        String nome;
+         */
 
+        x = 10;
+        y = x - 38;
+        X = 9 % 2;
+        p = (3 >= 5);
+        q = (true || false);
 
-        // Exemplos de declaração e atribuição de constante
-
-        final float PI = 3.1416F;
-
-        final String NOME_PAGINA = "home";
-
+        /*
+        Aqui mostramos uma sequência de mensagens na tela.
+         */
+        System.out.println("x = " + x);
+        System.out.println("y = " + y);
+        System.out.println("X = " + X);
+        System.out.println("p = " + p);
+        System.out.println("q = " + q);
+        System.out.printf("a = %.2f", a * 3);
     }
-
 }
