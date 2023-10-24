@@ -1,23 +1,15 @@
 import java.util.Scanner;
 
-//3. Crie um algoritmo em Java que mostre na tela todos os múltiplos de 3 entre os números 0 e 30 usando a estrutura “do while”.
+//4. Crie um algoritmo em Java que peça ao usuário para que se digite um número inteiro (exemplo: 14). Em seguida, o algoritmo deve mostrar a tabuada do número digitado utilizando o “for”.
 public class Main {
     public static void main(String[] args) {
 
-        int contador = 0;
-        int quantidadeDeMultiplos = 0;
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Escolha um numero");
+        int input = scanner.nextInt();
 
-        do {
-
-            if (contador > 0) {
-                if (contador % 3 == 0) {
-                    quantidadeDeMultiplos++;
-                }
-            }
-
-            contador++;
-        } while (contador <= 30);
-
-        System.out.println(quantidadeDeMultiplos);
+        for (int j = 0; j <= 10; j++) {
+            System.out.println(j + "*" + input + "= " + input * j);
+        }
     }
 }
