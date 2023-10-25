@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-        
+
         // Números primos são números que têm apenas 2 fatores: 1 e ele mesmo. Por exemplo, os 5 primeiros números primos são 2, 3, 5, 7 e 11.
 
         Scanner scanner = new Scanner(System.in);
