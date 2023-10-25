@@ -1,34 +1,28 @@
 import java.util.Scanner;
 
-//6. Crie um algoritmo em Java que solicita um número inteiro ao usuário. Em seguida, deve-se verificar se o número digitado é ou não é um número primo.
+//7. Crie um algoritmo em Java que peça ao usuário a temperatura em graus Celsius e converta-a para graus Fahrenheit. Além disso, o programa deve imprimir se está frio (abaixo de 32°F), moderado (entre 32°F e 80°F) ou quente (acima de 80°F).
 public class Main {
     public static void main(String[] args) {
-
-
-        // Números primos são números que têm apenas 2 fatores: 1 e ele mesmo. Por exemplo, os 5 primeiros números primos são 2, 3, 5, 7 e 11.
-
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Escolha um numero");
-        int input = scanner.nextInt();
-        boolean primo = true;
+        System.out.println("Escolha uma temp em celsius");
+        if (scanner.hasNextDouble()) {
+            double tempCelsius = scanner.nextInt();
+            double tempFahrenheit = 0;
+
+            //Fahrenheit (°F) = (Temperature in degrees Celsius (°C) * 9/5) + 32
+
+            tempFahrenheit = (tempCelsius * 9 / 5) + 32;
 
 
-        if (input <= 1) {
-            primo = false;
-        } else {
-            for (int i = 2; i <= Math.sqrt(input); i++) {
-                if (input % i == 0) {
-                    primo = false;
-                    break;
-                }
+            if (tempFahrenheit > 80) {
+                System.out.println("Está quente");
+            } else if (tempFahrenheit < 32) {
+                System.out.println("Está frio");
+            } else {
+                System.out.println("Está normal");
             }
-        }
-
-        if (primo) {
-            System.out.println("O número é primo.");
         } else {
-            System.out.println("O número não é primo.");
+            System.out.println("Invalid input. Please enter a numeric value for temperature.");
         }
-
     }
 }
