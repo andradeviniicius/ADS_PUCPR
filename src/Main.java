@@ -12,5 +12,9 @@ public class Main {
 
     public static void main(String[] args) {
 
+        Financiamento finance1 = new Financiamento(150000, 365, 5);
+
+        System.out.println(finance1.pagamentoMensal());
+        System.out.println(finance1.pagamentoTotal());
     }
 }
