@@ -4,7 +4,14 @@ import java.util.Scanner;
 
 public class InterfaceUsuario {
 
-    //1. Pedir ao usuário o valor do imóvel: Ela deve conter um método o qual pede ao usuário para que digite o valor do imóvel, e retorne o valor digitado pelo usuário.
+//    b. Classe InterfaceUsuario (no pacote util):
+//
+//    i. Ajuste os métodos de entrada de dados (valor do imóvel, prazo de financiamento e taxa de juros) para que usem estruturas condicionais (como if/else ou switch) dentro dos seus métodos para verificar se as entradas fornecidas pelo usuário são válidas.
+//
+//    ii. Aceite somente valores positivos para o valor do imóvel, prazo do financiamento e taxa de juros anual.
+//
+//    iii. Use estruturas de repetição (como do, do-while ou for). Se algum dos valores for inválido, o programa deve informar ao usuário sobre o erro e solicitar que ele insira novamente os dados.
+
     public int valorImovel() {
 
         Scanner scanner = new Scanner(System.in);
@@ -13,7 +20,6 @@ public class InterfaceUsuario {
         return scanner.nextInt();
     }
 
-    //2. Pedir ao usuário o prazo do financiamento: Ela deve conter um método o qual pede ao usuário para que digite o prazo do financiamento em anos, e retorne o valor digitado pelo usuário.
     public int valorFinanciamento() {
 
         Scanner scanner = new Scanner(System.in);
@@ -23,7 +29,6 @@ public class InterfaceUsuario {
     }
 
 
-    //3. Pedir ao usuário a taxa de juros: Ela deve conter um método o qual pede ao usuário para que digite a taxa de juros anual, e retorne o valor digitado pelo usuário.
     public int valorJurosAnual() {
 
         Scanner scanner = new Scanner(System.in);

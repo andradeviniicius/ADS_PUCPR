@@ -1,4 +1,4 @@
-//c. Classe Main:
+package main;//c. Classe main.Main:
 //
 //i. Esta é a classe principal do programa.
 //
@@ -9,12 +9,18 @@
 //2. Após ler os dados do financiamento, instancie um objeto do tipo Financiamento.Financiamento para criar este financiamento.
 
 import modelo.Financiamento;
+import util.InterfaceUsuario;
 
 public class Main {
 
     public static void main(String[] args) {
 
-        Financiamento finance1 = new Financiamento(150000, 365, 5);
+        InterfaceUsuario user1 = new InterfaceUsuario();
+
+        int valorImovel = user1.valorImovel();
+        int valorJurosAnual = user1.valorJurosAnual();
+
+        Financiamento finance1 = new Financiamento(valorImovel, 365, valorJurosAnual);
 
         finance1.showDadosFinanciamento();
     }
