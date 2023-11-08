@@ -1,4 +1,4 @@
-package Financiamento;//i. Esta classe representará um financiamento.
+package modelo;//i. Esta classe representará um financiamento.
 
 public class Financiamento {
     private final double valorImovel;
@@ -17,11 +17,6 @@ public class Financiamento {
         return taxaJurosAnual;
     }
 
-    public void showDadosFinanciamento() {
-        System.out.println("Valor imovel: " + getValorImovel());
-        System.out.println("Prazo Financiamento.Financiamento: " + getPrazoFinanciamento());
-        System.out.println("Taxa Juros Anual: " + getTaxaJurosAnual());
-    }
 
     public Financiamento(double valorImovel, int prazoFinanciamento, double taxaJurosAnual) {
         this.valorImovel = valorImovel;
@@ -40,4 +35,8 @@ public class Financiamento {
     }
 
 
+    public void showDadosFinanciamento() {
+        System.out.println("Valor total financiamento: " + pagamentoTotal());
+        System.out.println("valor do imovel: " + getValorImovel());
+    }
 }

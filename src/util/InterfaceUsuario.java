@@ -1,4 +1,4 @@
-package Financiamento;
+package util;
 
 import java.util.Scanner;
 

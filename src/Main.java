@@ -8,7 +8,7 @@
 //
 //2. Após ler os dados do financiamento, instancie um objeto do tipo Financiamento.Financiamento para criar este financiamento.
 
-import Financiamento.Financiamento;
+import modelo.Financiamento;
 
 public class Main {
 
@@ -16,7 +16,6 @@ public class Main {
 
         Financiamento finance1 = new Financiamento(150000, 365, 5);
 
-        System.out.println(finance1.pagamentoMensal());
-        System.out.println(finance1.pagamentoTotal());
+        finance1.showDadosFinanciamento();
     }
 }
