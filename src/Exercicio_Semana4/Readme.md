@@ -1,0 +1,9 @@
+- Crie uma classe Carro com atributos para 
+- - "marca",
+- - "modelo",
+- - "ano" e 
+- - "placa". 
+- Em seguida, crie uma classe MotoristaUber que possui um objeto Carro como um de seus atributos, além de atributos para "nome" e "idMotorista". Crie métodos para definir e obter esses atributos.
+- Crie uma classe Produto com atributos para "nome", "preco", "quantidadeEmEstoque". Em seguida, crie uma classe CarrinhoDeCompras que contém um ArrayList de Produto. Adicione métodos à classe CarrinhoDeCompras para adicionar produtos ao carrinho, remover produtos e calcular o total do carrinho.
+- Crie uma classe Local com atributos para "nome", "latitude" e "longitude". Em seguida, crie uma classe Rota que contém um ArrayList de Local para representar uma rota de um ponto de origem a um destino. Adicione métodos à classe Rota para adicionar um novo local à rota e para calcular a distância total da rota.
+- Desafio: transforme o diagrama UML abaixo em um algoritmo em Java.
