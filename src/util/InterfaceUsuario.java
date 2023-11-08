@@ -20,10 +20,10 @@ public class InterfaceUsuario {
         return scanner.nextInt();
     }
 
-    public int valorFinanciamento() {
+    public int prazoFinanciamento() {
 
         Scanner scanner = new Scanner(System.in);
-        System.out.println("valor financiamento?");
+        System.out.println("prazo financiamento?");
 
         return scanner.nextInt();
     }

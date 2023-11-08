@@ -25,7 +25,6 @@ public class Financiamento {
 
     public double pagamentoMensal() {
         return (this.valorImovel / this.prazoFinanciamento) * (1 + (this.taxaJurosAnual / 12));
-
     }
 
     public double pagamentoTotal() {

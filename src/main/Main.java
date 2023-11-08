@@ -19,8 +19,9 @@ public class Main {
 
         int valorImovel = user1.valorImovel();
         int valorJurosAnual = user1.valorJurosAnual();
+        int prazoFinanciamento = user1.prazoFinanciamento();
 
-        Financiamento finance1 = new Financiamento(valorImovel, 365, valorJurosAnual);
+        Financiamento finance1 = new Financiamento(valorImovel, prazoFinanciamento, valorJurosAnual);
 
         finance1.showDadosFinanciamento();
     }
