@@ -1,5 +1,6 @@
 package util;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class InterfaceUsuario {
@@ -15,26 +16,68 @@ public class InterfaceUsuario {
     public int valorImovel() {
 
         Scanner scanner = new Scanner(System.in);
-        System.out.println("valor do imovel?");
+        int input;
 
-        return scanner.nextInt();
+        while (true) {
+            System.out.println("valor do imovel?");
+            try {
+                input = scanner.nextInt();
+                if (input >= 0) {
+                    break;
+                } else {
+                    System.out.println("Favor inserir um número positivo.");
+                }
+            } catch (InputMismatchException e) {
+                System.out.println("Favor inserir um número válido.");
+                scanner.next();
+            }
+        }
+        return input;
     }
 
     public int prazoFinanciamento() {
 
         Scanner scanner = new Scanner(System.in);
-        System.out.println("prazo financiamento?");
+        int input;
 
-        return scanner.nextInt();
+        while (true) {
+            System.out.println("prazo financiamento?");
+            try {
+                input = scanner.nextInt();
+                if (input >= 0) {
+                    break;
+                } else {
+                    System.out.println("Favor inserir um número positivo.");
+                }
+            } catch (InputMismatchException e) {
+                System.out.println("Favor inserir um número válido.");
+                scanner.next();
+            }
+        }
+        return input;
     }
 
 
     public int valorJurosAnual() {
 
         Scanner scanner = new Scanner(System.in);
-        System.out.println("valor juros anual?");
+        int input;
 
-        return scanner.nextInt();
+        while (true) {
+            System.out.println("valor dos juros?");
+            try {
+                input = scanner.nextInt();
+                if (input >= 0  && input <= 25) {
+                    break;
+                } else {
+                    System.out.println("Você nao pode inserir uma taxa de juros abusiva e nem negativa.");
+                }
+            } catch (InputMismatchException e) {
+                System.out.println("Favor inserir um número válido.");
+                scanner.next();
+            }
+        }
+        return input;
     }
 
 }

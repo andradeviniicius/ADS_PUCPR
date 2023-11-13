@@ -33,7 +33,7 @@ public class Financiamento {
 
 
     public void showDadosFinanciamento() {
-        System.out.println("Valor total financiamento: " + pagamentoTotal());
         System.out.println("valor do imovel: " + getValorImovel());
+        System.out.println("Valor total financiamento: " + pagamentoTotal());
     }
 }
