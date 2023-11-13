@@ -41,7 +41,7 @@ public class InterfaceUsuario {
         int input;
 
         while (true) {
-            System.out.println("prazo financiamento?");
+            System.out.println("prazo financiamento em anos?");
             try {
                 input = scanner.nextInt();
                 if (input >= 0) {
