@@ -28,44 +28,9 @@ public class Main {
 
         Financiamento finance1 = new Financiamento(valorImovel1, prazoFinanciamento1, valorJurosAnual1);
 
-        InterfaceUsuario user2 = new InterfaceUsuario();
-
-        int valorImovel2 = user2.valorImovel();
-        int valorJurosAnual2 = user2.valorJurosAnual();
-        int prazoFinanciamento2 = user2.prazoFinanciamento();
-
-        Financiamento finance2 = new Financiamento(valorImovel2, prazoFinanciamento2, valorJurosAnual2);
-
-        InterfaceUsuario user3 = new InterfaceUsuario();
-
-        int valorImovel3 = user3.valorImovel();
-        int valorJurosAnual3 = user3.valorJurosAnual();
-        int prazoFinanciamento3 = user3.prazoFinanciamento();
-
-        Financiamento finance3 = new Financiamento(valorImovel3, prazoFinanciamento3, valorJurosAnual3);
-
-
-        InterfaceUsuario user4 = new InterfaceUsuario();
-
-        int valorImovel4 = user4.valorImovel();
-        int valorJurosAnual4 = user4.valorJurosAnual();
-        int prazoFinanciamento4 = user4.prazoFinanciamento();
-
-        Financiamento finance4 = new Financiamento(valorImovel4, prazoFinanciamento4, valorJurosAnual4);
 
         System.out.println("Financiamento 1 = ");
         finance1.showDadosFinanciamento();
-
-        System.out.println("Financiamento 2 = ");
-        finance2.showDadosFinanciamento();
-
-        System.out.println("Financiamento 3 = ");
-        finance3.showDadosFinanciamento();
-
-        System.out.println("Financiamento 4 = ");
-        finance4.showDadosFinanciamento();
-
-
 
     }
 }

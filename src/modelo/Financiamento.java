@@ -5,6 +5,11 @@ public class Financiamento {
     private final int prazoFinanciamento;
     private final double taxaJurosAnual;
 
+    // ex input: (500000, 10, 10)
+    // vlr imovel = 500.000,00
+    // prazo = 10 anos
+    // juros = 10%
+
     public Financiamento(double valorImovel, int prazoFinanciamento, double taxaJurosAnual) {
         this.valorImovel = valorImovel;
         this.prazoFinanciamento = prazoFinanciamento;
@@ -24,7 +29,7 @@ public class Financiamento {
     }
 
     public double pagamentoMensal() {
-        return (this.valorImovel / this.prazoFinanciamento) * (1 + (this.taxaJurosAnual / 12));
+        return (this.valorImovel / (this.prazoFinanciamento * 12) * (1 + ((this.taxaJurosAnual / 100) / 12)));
     }
 
     public double pagamentoTotal() {
@@ -34,6 +39,7 @@ public class Financiamento {
 
     public void showDadosFinanciamento() {
         System.out.println("valor do imovel: " + getValorImovel());
+        System.out.println("Valor pagamento mensal: " + pagamentoMensal());
         System.out.println("Valor total financiamento: " + pagamentoTotal());
     }
 }
