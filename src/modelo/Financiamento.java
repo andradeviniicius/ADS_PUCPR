@@ -1,21 +1,17 @@
-package modelo;//i. Esta classe representará um financiamento.
-
+package modelo;
 public class Financiamento {
-    private final double valorImovel;
-    private final int prazoFinanciamento;
-    private final double taxaJurosAnual;
+    private double valorImovel;
+    private int prazoFinanciamento;
+    private double taxaJurosAnual;
 
-    // ex input: (500000, 10, 10)
-    // vlr imovel = 500.000,00
-    // prazo = 10 anos
-    // juros = 10%
-
+    // Construtor
     public Financiamento(double valorImovel, int prazoFinanciamento, double taxaJurosAnual) {
         this.valorImovel = valorImovel;
         this.prazoFinanciamento = prazoFinanciamento;
         this.taxaJurosAnual = taxaJurosAnual;
     }
 
+    // Getters
     public double getValorImovel() {
         return valorImovel;
     }
@@ -28,18 +24,23 @@ public class Financiamento {
         return taxaJurosAnual;
     }
 
-    public double pagamentoMensal() {
+    // Método abstrato para calcular o pagamento mensal
+    public double calcularPagamentoMensal() {
         return (this.valorImovel / (this.prazoFinanciamento * 12) * (1 + ((this.taxaJurosAnual / 100) / 12)));
     }
 
-    public double pagamentoTotal() {
-        return pagamentoMensal() * prazoFinanciamento;
+    ;
+
+    // Método para calcular o total do pagamento
+    public double calcularTotalPagamento() {
+        return calcularPagamentoMensal() * prazoFinanciamento;
     }
 
-
-    public void showDadosFinanciamento() {
-        System.out.println("valor do imovel: " + getValorImovel());
-        System.out.println("Valor pagamento mensal: " + pagamentoMensal());
-        System.out.println("Valor total financiamento: " + pagamentoTotal());
+    // Método público para mostrar dados do financiamento
+    public void mostrarDadosFinanciamento() {
+        System.out.println("Valor do Imóvel: R$ " + valorImovel);
+        System.out.println("Prazo do Financiamento: " + prazoFinanciamento + " anos");
+        System.out.println("Taxa de Juros Anual: " + taxaJurosAnual + "%");
+        System.out.println("Total do Financiamento: R$ " + calcularTotalPagamento());
     }
 }
