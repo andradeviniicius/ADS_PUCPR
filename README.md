@@ -1,5 +1,6 @@
 <details>
   <summary>README EN-US</summary>
+  
 # PUCPR - Analysis and Systems Development Repository
 
 Welcome to my PUCPR Analysis and Systems Development repository! 📚 This repository serves as a comprehensive collection of materials and projects related to my coursework at Pontifical Catholic University of Paraná (PUCPR).
